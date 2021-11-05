@@ -1,0 +1,47 @@
+{
+    "name": "laravolt/camunda",
+    "description": "High level model, something like Eloquent, to interact with Camunda resources via REST API",
+    "keywords": ["laravel", "laravolt", "camunda"],
+    "homepage": "https://github.com/laravolt/camunda",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bayu Hendra Winata",
+            "email": "uyab.exe@gmail.com",
+            "homepage": "https://laravolt.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-simplexml": "*",
+        "spatie/data-transfer-object": "dev-master as 3.1.1",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravolt\\Camunda\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravolt\\Camunda\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Laravolt\\Camunda\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.11",
+        "brianium/paratest": "^6.2",
+        "friendsofphp/php-cs-fixer": "v3.0.0-rc.1",
+        "sempro/phpunit-pretty-print": "^1.4"
+    }
+}
